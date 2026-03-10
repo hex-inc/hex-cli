@@ -1,5 +1,7 @@
 # Hex CLI
 
+![GitHub Release](https://img.shields.io/github/v/release/hex-inc/hex-cli)
+
 > [!IMPORTANT]
 > **Early Beta** — This project is in very early beta. Expect significant breaking changes as it matures.
 
