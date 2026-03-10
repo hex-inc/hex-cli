@@ -12,13 +12,7 @@ The official command-line interface for [Hex](https://hex.ai), designed for data
 ### Shell installer (recommended)
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/hex-inc/hex-cli/main/install.sh | sh
-```
-
-To install to a custom location:
-
-```sh
-curl -sSL https://raw.githubusercontent.com/hex-inc/hex-cli/main/install.sh | sh -s -- --prefix ~/.local
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/hex-inc/hex-cli/releases/latest/download/hex-installer.sh | sh
 ```
 
 ### Homebrew
