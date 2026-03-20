@@ -17,7 +17,9 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/hex-inc/hex-cli/release
 
 ### Homebrew
 
-Coming soon...
+Make sure to install hex from the hex-inc Homebrew tap:
+
+`brew install hex-inc/hex-cli/hex`
 
 ## Getting started
 
@@ -28,6 +30,13 @@ hex auth login
 ```
 
 This opens a browser-based OAuth flow and stores your credentials securely in your system keyring.
+
+To authenticate against multiple workspaces, use named profiles:
+
+```sh
+hex auth login --profile staging -H https://staging.hex.tech/
+hex auth switch staging
+```
 
 ### Run a project
 
@@ -45,7 +54,7 @@ hex projects list
 
 | Command           | Description                                                               |
 | ----------------- | ------------------------------------------------------------------------- |
-| `hex auth`        | Manage authentication (`login`, `logout`, `status`)                       |
+| `hex auth`        | Manage authentication (`login`, `logout`, `status`, `switch`, `token`)    |
 | `hex projects`    | Manage projects (`list`, `get`, `create`, `open`)                         |
 | `hex run`         | Execute a project and wait for completion                                 |
 | `hex runs`        | Manage project runs (`list`, `status`, `cancel`)                          |
@@ -54,7 +63,6 @@ hex projects list
 | `hex connections` | Browse data connections (`list`, `get`)                                   |
 | `hex groups`      | Manage workspace groups (`list`, `get`, `create`, `delete`)               |
 | `hex users`       | Browse workspace users (`list`, `get`)                                    |
-| `hex profile`     | Manage environment profiles (`list`, `add`, `use`, `remove`, `current`)   |
 | `hex config`      | Manage CLI configuration (`list`, `get`, `set`, `path`)                   |
 | `hex logs`        | View CLI logs                                                             |
 
@@ -63,7 +71,6 @@ Run `hex --help` or `hex <command> --help` for detailed usage.
 ## Global flags
 
 ```
---api-url <URL>     Override API base URL (env: HEX_API_URL)
 -p, --profile <NAME>  Select profile (env: HEX_PROFILE)
 --json              Output as JSON
 -q, --quiet         Suppress non-essential output
@@ -85,12 +92,6 @@ All commands support `--json` for machine-readable output, making it easy to int
 
 ```sh
 hex projects list --json | jq '.[0].name'
-```
-
-You can also set JSON as the default output format for a profile:
-
-```sh
-hex config set output_format json
 ```
 
 ## Uninstall
