@@ -2,6 +2,16 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/hex-inc/hex-cli)
 
+<pre>
+███╗  ███╗████████╗███╗  ███╗
+███║  ███║███╔═███║╚███╗███╔╝
+█████████║████████║ ╚█████╔╝ 
+███╔══███║███╔════╝ ███╔███╗ 
+███║  ███║███║ ███╗███╔╝ ███╗ 
+███║  ███║████████║███║  ███║
+╚══╝  ╚══╝╚═══════╝╚══╝  ╚══╝
+</pre>
+
 > [!IMPORTANT]
 > **Early Beta** — This project is in very early beta. Expect significant breaking changes as it matures.
 
@@ -9,17 +19,17 @@ The official command-line interface for [Hex](https://hex.ai), designed for data
 
 ## Installation
 
-### Shell installer (recommended)
-
-```sh
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/hex-inc/hex-cli/releases/latest/download/hex-installer.sh | sh
-```
-
-### Homebrew
+### Homebrew (recommended)
 
 Make sure to install hex from the hex-inc Homebrew tap:
 
 `brew install hex-inc/hex-cli/hex`
+
+### Shell installer
+
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/hex-inc/hex-cli/releases/latest/download/hex-installer.sh | sh
+```
 
 ## Getting started
 
