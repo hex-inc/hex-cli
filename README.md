@@ -28,7 +28,7 @@ Make sure to install hex from the hex-inc Homebrew tap:
 ### Shell installer
 
 ```sh
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/hex-inc/hex-cli/releases/latest/download/hex-installer.sh | sh
+curl -fsSL https://hex.tech/install.sh | bash
 ```
 
 ## Getting started
