@@ -12,9 +12,6 @@
 ╚══╝  ╚══╝╚═══════╝╚══╝  ╚══╝
 </pre>
 
-> [!IMPORTANT]
-> **Early Beta** — This project is in very early beta. Expect significant breaking changes as it matures.
-
 The official command-line interface for [Hex](https://hex.ai), designed for data people and their agents. Every command supports structured JSON output and consistent, composable patterns — making it a natural fit for AI agents, automation pipelines, and programmatic workflows, in addition to interactive use.
 
 ## Installation
