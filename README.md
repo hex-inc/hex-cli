@@ -78,6 +78,7 @@ Run `hex --help` or `hex <command> --help` for detailed usage.
 ## Global flags
 
 ```
+--profile <NAME>  Select profile (env: HEX_PROFILE)
 --json              Output as JSON
 -q, --quiet         Suppress non-essential output
 -v, --verbose       Show verbose output
